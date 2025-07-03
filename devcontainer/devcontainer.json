@@ -1,0 +1,10 @@
+{
+  "name": "ubuntu-vnc-tlauncher",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    }
+  },
+  "postCreateCommand": "apt update && apt install -y xfce4 tigervnc-standalone-server wget git"
+}
